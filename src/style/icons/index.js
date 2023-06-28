@@ -1,0 +1,6 @@
+export {default as CopyIcon} from './Copy.svg'
+export {default as HistoryIcon} from './History.svg'
+export {default as InputIcon} from './Input.svg'
+export {default as QrIcon} from './Qr.svg'
+export {default as TrashIcon} from './Trash.svg'
+export {default as GithubIcon} from './Github.svg'

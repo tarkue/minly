@@ -1,0 +1,67 @@
+.History__wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    width: 780px;
+    height: 60%;
+
+    background: var(--optional-color);
+
+    border-radius: var(--border-radius-l);
+}
+
+.History__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 640px;
+
+    font-size: 20px;
+    color: var(--primary-color);
+
+    margin-top: 45px;
+}
+.History__title div {
+    display: flex;
+    align-items: center;
+}
+.History__title div svg {
+    width: 34px;
+    height: 34px;
+    
+    margin-right: 17px;
+}
+
+.History__List { 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    width: 660px;
+    height: 70%;
+
+    margin-top: 30px;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+.TrashButton {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--optional-color);
+}
+.TrashButton svg {
+    width: 34px;
+    height: 34px;
+
+    border-radius: var(--border-radius-xs);
+}

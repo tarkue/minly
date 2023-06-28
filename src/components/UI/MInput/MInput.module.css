@@ -1,0 +1,33 @@
+.MInput {
+    display: flex;
+    align-items: center;
+
+    border-radius: var(--border-radius-m);
+    padding: 16px 14px;
+    
+    background: #fff;
+    width: fit-content;
+
+    cursor: text;
+}
+
+.MInput svg {
+    width: 46px;
+    height: 46px;
+}
+
+.MInput input {
+    width: 493px;
+    height: 46px;
+
+    margin-left: 14px;
+
+    border: none;
+    
+    color: var(--primary-color);
+    font-size: 20px;
+}
+
+.MInput input:focus {
+    outline: none;
+}

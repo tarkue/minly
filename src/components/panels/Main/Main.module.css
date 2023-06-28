@@ -1,0 +1,28 @@
+.GetLink_Button {
+    font-weight: 600;
+    padding: 0 45px;
+    height: 80px;
+
+    background: var(--accent-color);
+    color: #fff;
+}
+
+.main__form {
+    display: flex;
+    justify-content: space-around;
+
+    width: 945px;
+    padding: 25px 0;
+
+    background: var(--optional-color);
+    border-radius: var(--border-radius-l);
+}
+.main__title {
+    margin: 0;
+    padding: 0;
+
+    margin-bottom: 20px;
+    
+    font-size: 18px;
+    color: var(--primary-color)
+}

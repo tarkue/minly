@@ -1,0 +1,38 @@
+.QrCode {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    width: 170px;
+    height: 205px;
+
+    background: var(--accent-color);
+    border-radius: var(--border-radius-m);
+
+    cursor: pointer;
+}
+
+.QrCode__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 170px;
+    height: 170px;
+    
+    background: #fff;
+    border-radius: var(--border-radius-m);
+}
+
+.QrCode__svg {
+    max-width: 130px;
+    max-height: 130px;
+}
+
+.QrCode__title {
+    font-size: 14px;
+
+    color: #fff;
+
+    margin-top: 12px;
+}

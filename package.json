@@ -9,10 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@svgr/webpack": "^8.0.1",
     "eslint": "8.43.0",
     "eslint-config-next": "13.4.6",
     "next": "13.4.6",
+    "normalize.css": "^8.0.1",
+    "qrcode.react": "^3.1.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-use": "^17.4.0",
+    "webpack": "^5.87.0"
   }
 }

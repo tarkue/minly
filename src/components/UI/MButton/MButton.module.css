@@ -1,0 +1,12 @@
+.MButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    border-radius: 20px;
+
+    font-size: 20px;
+
+    cursor: pointer;
+}

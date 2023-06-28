@@ -1,0 +1,32 @@
+.ToHistory {
+    padding: 12px 25px;
+    max-width: 402px;
+
+    margin-top: 13px;
+
+    background: var(--optional-color);
+    color: var(--primary-color);
+}
+
+.ToHistory svg {
+    width: 34px;
+    height: 34px;
+    margin-right: 30px;
+}
+
+.ToHistory__counter {
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 25px;
+
+    border-radius: 50%;
+    background: var(--accent-color);
+    color: #fff;
+
+    font-size: 16px;
+}
