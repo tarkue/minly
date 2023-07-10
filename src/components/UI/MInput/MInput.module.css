@@ -31,3 +31,26 @@
 .MInput input:focus {
     outline: none;
 }
+
+
+@media only screen and (max-width: 945px) {
+    .MInput {
+        height: 64px;
+
+        padding: 0 14px;
+
+        margin-bottom: 12px;
+    }
+    .MInput input {
+        width: 217px;
+        height: 17px;
+
+        font-size: 16px;
+    }
+    
+    .MInput svg {
+        width: 32px;
+        height: 32px;
+    }
+
+}

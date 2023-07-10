@@ -1,7 +1,9 @@
 import QRCode from "qrcode.react";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 import s from "./QrCode.module.css"
+
+import { useClickAway } from "react-use";
 
 
 /**
@@ -11,7 +13,17 @@ import s from "./QrCode.module.css"
  * @param {string} Link ссылка по которой генерируется qr.
  */
 export default function QrCode({ Link }) {
+    const QRCodeWrapper = useRef()
     const QRRef = useRef(null)
+    const [MobileButtonView, SetMobileButtonView] = useState(
+        window.innerWidth > 945 ? false : true
+    )
+
+    useClickAway(QRCodeWrapper, () => {
+        if (window.innerWidth < 945 && !MobileButtonView) {
+            SetMobileButtonView(true)
+        }
+    })
 
     function DownloadQR() {
         let canvas = QRRef.current.children[0].toDataURL("image/png");
@@ -23,17 +35,27 @@ export default function QrCode({ Link }) {
         document.body.removeChild(anchor);
     }
 
-    return <div className={s.QrCode} onClick={DownloadQR}>
-        <div className={s.QrCode__wrapper} ref={QRRef}>
-            <QRCode
-                value={Link}
-                size={512}
-                style={{width: "auto", height: "auto"}}
-                className={s.QrCode__svg}
-            />
-        </div>
-        <p className={s.QrCode__title}>
-            Скачать QR-код
-        </p>
+    const QRButton = <div 
+        className={s.QrCodeButtonMobile}
+        onClick={() => SetMobileButtonView(false)}
+    >
+        Показать QR-код
     </div>
+    return <>
+        {MobileButtonView ? QRButton :
+            <div className={s.QrCode} onClick={DownloadQR} ref={QRCodeWrapper}>
+                <div className={s.QrCode__wrapper} ref={QRRef}>
+                    <QRCode
+                        value={Link}
+                        size={512}
+                        style={{width: "auto", height: "auto"}}
+                        className={s.QrCode__svg}
+                    />
+                </div>
+                <p className={s.QrCode__title}>
+                    Скачать QR-код
+                </p>
+            </div>
+        }
+    </>
 }

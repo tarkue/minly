@@ -4,7 +4,7 @@
     flex-direction: column;
 
     width: 780px;
-    height: 60%;
+    height: 58vh;
 
     background: var(--optional-color);
 
@@ -40,7 +40,9 @@
     flex-direction: column;
 
     width: 660px;
-    height: 70%;
+    height: fit-content;
+
+    border-radius: var(--border-radius-m);
 
     margin-top: 30px;
 
@@ -64,4 +66,66 @@
     height: 34px;
 
     border-radius: var(--border-radius-xs);
+}
+.History__btn_footer {
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 945px) {
+    .History__wrapper {
+        width: 332px;
+        height: 74vh;   
+
+        margin-top: 12vh;
+    }
+    .History__title {
+        width: 285px;
+        font-size: 14px;
+        
+        margin-top: 14px;
+    }
+    .History__title div svg {
+        width: 29px;
+        height: 29px;
+    }
+
+    .History__List { 
+        margin-top: 15px;
+        height: 63vh;
+
+        width: 299px;
+    }
+
+
+    .TrashButton {
+        width: 36px;
+        height: 36px;
+
+        border-radius: 50%;
+        background: var(--hover-color);
+    }
+    .TrashButton svg {
+        width: 27px;
+        height: 27px;
+    }
+    .History__btn_panel {
+        display: none;
+    }
+    .History__btn_footer {
+        display: block;
+    }
+
+}
+
+@media only screen and (max-height: 700px) {
+    .History__wrapper {
+        height: 70vh;  
+    }
+
+    .History__List { 
+        height: 57vh;
+
+    }
 }

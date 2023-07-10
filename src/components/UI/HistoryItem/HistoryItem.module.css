@@ -27,6 +27,11 @@
     color: var(--text-color);
     margin: 0;
     margin-top: 10px;
+
+    width: 415px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .HistoryItem__lastLink a {
@@ -55,4 +60,63 @@
 .HistoryItem__actions button svg {
     width: 30px;
     height: 30px;
+}
+
+.HistoryItem__actions button span {
+    display: none;
+}
+
+@media only screen and (max-width: 945px) {
+    .HistoryItem {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        width: 236px;
+        padding: 20px 28px;
+    
+        margin-bottom: 13px;
+    }
+    
+    .HistoryItem__result {
+        font-size: 22px;
+    }
+    
+    .HistoryItem__lastLink {
+        font-size: 12px;
+        margin: 0;
+        margin-top: 10px;
+
+        width: 236px;
+    }
+    
+    
+    .HistoryItem__actions {
+        margin-top: 14px;
+
+        width: 236px;
+    }
+    
+    .HistoryItem__actions button {
+        width: min-content;
+        height: min-content;
+        padding: 12px 23px;
+    
+        background: var(--accent-color);
+    
+        border-radius: var(--border-radius-s);
+
+        font-size: 12px;
+    }
+
+    .HistoryItem__actions button svg {
+        display: none;
+    }
+
+    .HistoryItem__actions button span {
+        display: block;
+
+        min-width: 52px;
+        color: #fff;
+    }
 }

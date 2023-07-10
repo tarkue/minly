@@ -36,3 +36,36 @@
 
     margin-top: 12px;
 }
+
+
+.QrCodeButtonMobile {
+    display: none;
+}
+
+@media only screen and (max-width: 945px) {
+    .QrCodeButtonMobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        color: #fff;
+
+        width: 175px;
+        height: 40px;
+
+        background: linear-gradient(180deg, #B7E4FF 0%, #60C5FF 58.33%);
+        border-radius: 0px 0px 20px 20px;
+
+        cursor: pointer;
+    }
+
+    .QrCode {
+        width: 190px;
+        border-radius: 0px 0px 40px 40px;
+    }
+
+    .QrCode__wrapper {
+        border-radius: 0px 0px 30px 30px;
+    }
+}
+

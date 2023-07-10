@@ -17,11 +17,12 @@ import { URLREG, WithProtocolURLREG } from '@/regexp'
  *
  * 
  * @param {string} id идентификатор панели.
+ * @param {function} SetActivePanel устанавливает стейт панели.
  */
 export default function Main({ id, SetActivePanel }) {
     const [Link, SetLink] = useState('');
 
-    function GetResult() {
+    const GetResult = () => {
         if (WithProtocolURLREG.test(Link) || URLREG.test(Link)) {
             HistoryStorage.add(Link)
             SetActivePanel('result')

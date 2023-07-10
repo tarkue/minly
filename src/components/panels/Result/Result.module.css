@@ -7,6 +7,7 @@
     height: 285px;
 
     background: var(--optional-color);
+    box-shadow: var(--panel-shadow);
 
     border-radius: var(--border-radius-l);
     
@@ -76,9 +77,176 @@
     border-radius: 50%;
     
     background-color: var(--accent-color);
+    box-shadow: 0px 0px 24px rgba(97, 197, 254, 0.2);
 }
 
 .CopyLink svg {
     width: 34px;
     height: 34px;
+}
+
+.Result__counter_m {
+    display: none;
+}
+
+.Back__button_m {
+    display: none;
+}
+
+.SplitMobile {
+    display: none;
+}
+
+.CopyLinkMobile {
+    display: none;
+}
+
+.ResultMobile {
+    display: inline;
+}
+@media only screen and (max-width: 945px) {
+    .Result__wrapper {
+        width: 325px;
+        
+        margin-top: 25vh;
+
+        background: none;
+        box-shadow: none;
+    }
+
+    .Result__last_link {
+        width: 183px;
+
+        font-size: 12px;
+
+        opacity: .8; 
+
+        text-align: center;
+
+        margin: 0 auto;
+        margin-bottom: 8px;
+        
+    }
+    .Result__last_link a {
+        display: block;
+
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: wrap;  
+    }
+
+    .Result__result_link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 325px;
+        height: 80px;
+
+        background: var(--optional-color);
+        box-shadow: var(--panel-shadow);
+
+        border-radius: var(--border-radius-m);
+    }
+    .Result__result_link a {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        
+        width: 255px;
+        height: 55px;
+
+        font-size: 18px;
+
+        margin: 0;
+        padding: 0;
+    }
+
+    .ResultMobile {
+        display: flex;
+        align-items: center;
+
+        width: 296px;
+
+        background: #fff;
+        border-radius: var(--border-radius-s);
+    }
+
+    .ResultMobile a {
+        margin: 0;
+        margin-left: 15px;
+
+        width: 160px;
+
+    }
+
+    .SplitMobile {
+        display: block;
+
+        width: 1px;
+        height: 38px;
+
+        background: var(--primary-color);
+        opacity: .1;
+
+        margin-left: 40px;
+    }
+
+    .CopyLinkMobile {
+        display: block;
+
+        background: none;
+
+        margin: 0;
+        margin-left: 20px;
+    }
+
+    .CopyLinkMobile svg {
+        width: 26px;
+        height: 26px;    
+    }
+    .CopyLinkMobile svg path {
+        stroke: var(--accent-color);
+    }
+
+    .Result__content {
+        width: 325px;
+    }
+
+    .Result__counter {
+        display: none;
+    }
+
+    .Result__counter_m {
+        display: block;
+
+        color: var(--primary-color);
+        opacity: 0.4;
+
+        font-size: 12px;
+    }
+
+    .Back__button {
+        display: none;
+    }
+
+    .Back__button_m {
+        display: block;
+    }
+
+    .Result__res_text {
+        display: none;
+    }
+
+    .QrCode__wrapper {
+        position: absolute;
+        top: calc(25vh + 171px);
+
+        z-index: 1;
+    }
+
+    .CopyLink {
+        background: none;
+        box-shadow: none;
+    }
 }

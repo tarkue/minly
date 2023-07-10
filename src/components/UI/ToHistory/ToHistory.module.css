@@ -1,11 +1,13 @@
 .ToHistory {
-    padding: 12px 25px;
-    max-width: 402px;
+    width: 401px;
+    height: 58px;
 
     margin-top: 13px;
 
     background: var(--optional-color);
     color: var(--primary-color);
+    
+    font-size: 20px;
 }
 
 .ToHistory svg {
@@ -29,4 +31,28 @@
     color: #fff;
 
     font-size: 16px;
+}
+@media only screen and (max-width: 945px) {
+    .ToHistory {
+        width: 325px;
+        height: 64px;
+
+        margin-top: 11px;
+
+        font-size: 14px;
+
+        padding: 14px 0;
+    }
+
+    .ToHistory svg {
+        width: 24px;
+        height: 24px;
+        margin-right: 20px;
+    }
+    .ToHistory__counter {
+        width: 27px;
+        height: 27px;
+
+        font-size: 10px;
+    }
 }
