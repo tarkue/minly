@@ -22,6 +22,14 @@
     text-decoration: none;
 }
 
+.HistoryItem__result:hover {
+    color: #88D4FF;
+}
+
+.HistoryItem__result:active {
+    color: #53BAF5;
+}
+
 .HistoryItem__lastLink {
     font-size: 16px;
     color: var(--text-color);
@@ -57,6 +65,14 @@
 
     border-radius: 50%;
 }
+.HistoryItem__actions button:hover {
+    background: #88D4FF;
+}
+
+.HistoryItem__actions button:active {
+    background: #53BAF5;
+}
+
 .HistoryItem__actions button svg {
     width: 30px;
     height: 30px;
@@ -119,4 +135,35 @@
         min-width: 52px;
         color: #fff;
     }
+}
+
+
+@media only screen and (max-width: 345px) {
+    .HistoryItem {
+
+        width: 222px;
+        padding: 20px 20px;
+    
+        margin-bottom: 10px;
+    }
+    
+    .HistoryItem__result {
+        font-size: 20px;
+    }
+    
+    .HistoryItem__lastLink {
+        width: 222px;
+    }
+    
+    
+    .HistoryItem__actions {
+        width: 222px;
+    }
+    
+    .HistoryItem__actions button {
+        padding: 12px 20px;
+    }
+
+ 
+
 }

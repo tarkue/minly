@@ -6,8 +6,13 @@
     color: var(--github-color);
     fill: var(--github-color);
     width: 108px;
-
 }
+
+.link:hover {
+    color: #E8F4FC;
+    fill: #E8F4FC;
+}
+
 .link span {
     display: flex;
     align-items: center;

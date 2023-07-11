@@ -9,6 +9,14 @@
     font-size: 20px;
 }
 
+.GetLink_Button:hover {
+    background: #88D4FF;
+}
+
+.GetLink_Button:active {
+    background: #53BAF5;
+}
+
 .main__form {
     display: flex;
     justify-content: center;
@@ -78,3 +86,17 @@
     }
 }
 
+
+@media only screen and (max-width: 345px) {
+    .GetLink_Button {
+        font-size: 16px;
+        
+        width: 258px;
+        height: 60px;
+    }
+
+    .main__form {
+        width: 285px;
+        height: 158px;
+    }
+}

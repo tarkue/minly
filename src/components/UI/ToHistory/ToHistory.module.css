@@ -8,6 +8,15 @@
     color: var(--primary-color);
     
     font-size: 20px;
+
+}
+
+.ToHistory:hover {
+    background: #D6E7F1;
+}
+
+.ToHistory:active {
+    background: #C7DEEB;
 }
 
 .ToHistory svg {
@@ -52,6 +61,31 @@
     .ToHistory__counter {
         width: 27px;
         height: 27px;
+
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 345px) {
+    .ToHistory {
+        width: 285px;
+        height: 60px;
+
+        margin-top: 10px;
+
+        font-size: 12px;
+
+        padding: 0 0;
+    }
+
+    .ToHistory svg {
+        width: 24px;
+        height: 24px;
+        margin-right: 20px;
+    }
+    .ToHistory__counter {
+        width: 21px;
+        height: 21px;
 
         font-size: 10px;
     }

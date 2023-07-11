@@ -116,7 +116,6 @@
     .History__btn_footer {
         display: block;
     }
-
 }
 
 @media only screen and (max-height: 700px) {
@@ -127,5 +126,35 @@
     .History__List { 
         height: 57vh;
 
+    }
+}
+
+
+@media only screen and (max-width: 345px) {
+    .History__wrapper {
+        width: 285px;
+    }
+
+    .History__title {
+        width: 250px;
+
+        margin-top: 20px;
+    }
+    .History__title div svg {
+        width: 29px;
+        height: 29px;
+    }
+
+    .History__List { 
+        width: 275px;
+    }
+
+
+    .TrashButton {
+        width: 32px;
+        height: 32px;
+    }
+    .TrashButton svg {
+        width: 100%;
     }
 }
